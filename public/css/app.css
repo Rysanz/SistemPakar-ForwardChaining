@@ -1,0 +1,73 @@
+/* Title bar container */
+.title-bar {
+    height: 60px;
+    background-color: #19376d;
+    color: rgb(111, 255, 0);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Title bar brand */
+.title-bar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-top: 10px;
+}
+
+/* Sidebar container */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: #19376d;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+/* Active tab link */
+.sidebar a.active {
+    color: #f1f1f1;
+}
+
+/* Hover over tab link */
+.sidebar a:hover:not(.active) {
+    color: #f1f1f1;
+    background-color: #8a8a8a;
+}
+
+/* Main content container */
+.content {
+    margin-left: 200px; /* adjust according to your sidebar width */
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.br {
+    display: flex;
+}
